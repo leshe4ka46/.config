@@ -1,0 +1,209 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 50,
+    "modules-left": ["clock","hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+            "hyprland/language",
+            "network",
+            "bluetooth",
+            "temperature",
+            //"custom/power_profile",
+            "battery",
+            "cpu",
+            "memory",
+            "power-profiles-daemon",
+            "backlight",
+            "pulseaudio",
+            "pulseaudio#microphone",
+            "tray"
+        ],
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸",
+        "format-ru": "🇷🇺"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    
+    //"custom/power_profile":{
+    //    //shows the current power profile and switches to next on click
+    //    "exec": "asusctl profile -p | sed s:'Active profile is'::",
+    //    "interval": 30,
+    //    "format": "󰈐{}",
+    //    "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
+    //    "signal": 8
+    //},
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S  %a, %d.%m.%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+	},
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-down": "brightnessctl set 1%+",
+        "on-scroll-up": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " {}%", // Icon: memory
+        // "on-click": "xfce4-terminal -e 'htop'",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-down": "pamixer -i 5",
+        "on-scroll-up": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-down": "pamixer --default-source -i 5",
+        "on-scroll-up": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+    
+    "temperature": {
+        "thermal-zone": 1,
+        "format": "{temperatureC}°C ",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C ",
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input"
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "  {signalStrength}%",
+        // "format-wifi": "  ",
+        "format-ethernet": "🖧 {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname}:{essid} {ipaddr}/{cidr} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        // "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
+        "on-click": "nm-applet",
+        //"interval": 5,
+        //"nospacing": 1
+    },
+
+    "cpu": {
+        "format": "󰍛 {usage}%",
+        "interval": 1,
+        "min-length": 5,
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
+        "format-icons": [
+            "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"
+        ],
+        "on-click": "plasma-systemmonitor",
+        "tooltip": true,
+        "tooltip-format": "CPU Usage: {usage}% | Load: {load} | Icon: {icon}"
+    },
+
+    "bluetooth": {
+	    "format": " {status}",
+	    "format-disabled": "󰂳 ", // an empty format will hide the module
+	    "format-connected": " {num_connections}",
+	    "tooltip-format": "{device_alias}",
+	    "tooltip-format-connected": " {device_enumerate}",
+	    "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+	    "on-click": "blueberry",
+	    "tooltip": true,
+	    "interval": 5
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon} ",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": " perf",
+            "performance": " perf",
+            "balanced": " bal",
+            "power-saver": " save"
+        }
+    },
+}

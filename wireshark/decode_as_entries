@@ -1,0 +1,15 @@
+# "Decode As" entries file for Wireshark 4.5.0.
+#
+# This file is regenerated each time "Decode As" preferences
+# are saved within Wireshark. Making manual changes should be safe,
+# however.
+decode_as_entry: udp.port,5000,TAPA,GSM over IP
+decode_as_entry: udp.port,23000,(none),GPRS-NS
+decode_as_entry: udp.port,10800,(none),GPRS-NS
+decode_as_entry: udp.port,10801,(none),GPRS-NS
+decode_as_entry: udp.port,23001,(none),GPRS-NS
+decode_as_entry: udp.port,23002,(none),GPRS-NS
+decode_as_entry: udp.port,16012,(none),RTP
+decode_as_entry: udp.port,23500,(none),RTP
+decode_as_entry: udp.port,23504,(none),RTP
+decode_as_entry: udp.port,5069,(none),SIP
