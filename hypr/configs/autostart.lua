@@ -1,0 +1,33 @@
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("TERMINAL", "kitty")
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("GTK_THEME", "Breeze-Dark")
+hl.env("DE", "gnome")
+
+-- exec
+hl.exec_cmd([[gsettings set org.gnome.desktop.interface gtk-theme "Dracula"]])
+hl.exec_cmd([[gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"]])
+
+-- exec-once
+hl.on("hyprland.start", function()
+	hl.exec_cmd("~/.config/hypr/xdg-portal-hyprland")
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+	hl.exec_cmd("/usr/lib/polkit-kde-authentication-agent-1")
+	hl.exec_cmd("waybar")
+	hl.exec_cmd("nm-applet")
+	hl.exec_cmd("kwalletd6")
+	hl.exec_cmd("hypridle")
+	hl.exec_cmd("swaync")
+	hl.exec_cmd("hyprpaper")
+	hl.exec_cmd("kdeconnectd")
+	hl.exec_cmd("kdeconnect-indicator")
+	-- hl.exec_cmd("swaybg -m fill -i ~/.config/hypr/hong-kong-night.jpg")
+	hl.exec_cmd("/usr/bin/hyprland-per-window-layout")
+
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP")
+	hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
+	hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme Breeze-Dark")
+	hl.exec_cmd("gsettings set org.gnome.desktop.interface icon-theme breeze-dark")
+end)

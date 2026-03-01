@@ -1,0 +1,7 @@
+require("configs.monitor")
+require("configs.autostart")
+require("configs.settings")
+require("configs.decoration")
+require("configs.animations")
+require("configs.keybinds")
+require("configs.wrules")

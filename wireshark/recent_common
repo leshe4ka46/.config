@@ -1,0 +1,409 @@
+# Common recent settings file for Wireshark 4.5.0.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /home/alex/Desktop/pcapng/apiv2.pcap
+recent.capture_file: /home/alex/Desktop/pcapng/mts-bsc-2-night-test.pcapng
+recent.capture_file: /home/alex/Desktop/pcapng/mts-night-tests-bsc-1-succ.pcapng
+recent.capture_file: /tmp/mrp-mvrp.pcap
+recent.capture_file: /home/alex/Desktop/pcapng/call-with-rtp.pcapng
+recent.capture_file: /home/alex/Desktop/pcapng/lte-sctp-params.pcapng
+recent.capture_file: /home/alex/Desktop/pcapng/lte/lte-csmt.pcapng
+recent.capture_file: /home/alex/aboba.pcapng
+recent.capture_file: /home/alex/Downloads/Telegram Desktop/fw1083.pcap
+recent.capture_file: /home/alex/Downloads/Telegram Desktop/859_updownlink.pcapng
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+recent.capture_filter: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter: not (udp port 5802 or udp port 5702)
+recent.capture_filter: not (udp port 5702 or udp port 5802 or udp port 53 or icmp or udp port 6702 or udp port 6802 or http)
+recent.capture_filter: host 77.221.141.106
+recent.capture_filter: host eq 77.221.141.106
+recent.capture_filter: port 37008
+recent.capture_filter: ptp
+recent.capture_filter: ether host ff:ff:ff:ff:ff:ff
+recent.capture_filter: link[0] == 0x80
+recent.capture_filter: ether multicast
+recent.capture_filter: not (udp port 5702 or udp port 5802)
+recent.capture_filter: not (udp port 5702 or udp port 5802 or udp port 53 or icmp)
+recent.capture_filter.-: ptp
+recent.capture_filter.cat: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.tun0: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.lo: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.lo: not (udp port 5802 or udp port 5702)
+recent.capture_filter.lo: not (udp port 5702 or udp port 5802 or udp port 53 or icmp or udp port 6702 or udp port 6802 or http)
+recent.capture_filter.lo: not (udp port 5702 or udp port 5802)
+recent.capture_filter.lo: not (udp port 5702 or udp port 5802 or udp port 53 or icmp)
+recent.capture_filter.any: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.any: not (udp port 5802 or udp port 5702)
+recent.capture_filter.any: not (udp port 5702 or udp port 5802 or udp port 53 or icmp or udp port 6702 or udp port 6802 or http)
+recent.capture_filter.any: host 77.221.141.106
+recent.capture_filter.any: not (udp port 5702 or udp port 5802)
+recent.capture_filter.router: not (udp port 5702 or udp port 5802 or udp port 53 or icmp or udp port 6702 or udp port 6802 or http)
+recent.capture_filter.wlan0: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.wlan0: not (udp port 5802 or udp port 5702)
+recent.capture_filter.wlan0: host eq 77.221.141.106
+recent.capture_filter.wlan0: port 37008
+recent.capture_filter.wlan0: ether host ff:ff:ff:ff:ff:ff
+recent.capture_filter.wlan0: link[0] == 0x80
+recent.capture_filter.wlan0: ether multicast
+recent.capture_filter.wlan0: not (udp port 5702 or udp port 5802)
+recent.capture_filter.irt: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.irt: not (udp port 5802 or udp port 5702)
+recent.capture_filter.irt: not (udp port 5702 or udp port 5802 or udp port 53 or icmp or udp port 6702 or udp port 6802 or http)
+recent.capture_filter.enp1s0f0: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+recent.capture_filter.enp1s0f0: port 37008
+recent.capture_filter.enp1s0f0: not (udp port 5802 or udp port 5702)
+recent.capture_filter.bluetooth-monitor: not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: (((gsm_abis_rsl || bssap || sccp || gsmtap) && !(gsm_abis_rsl.msg_type == 0x12)) && !(gsm_abis_rsl.msg_type == 0x28)) && !(gsm_abis_rsl.msg_type == 0x19)
+recent.display_filter: gsmtap || gsm_abis_rsl
+recent.display_filter: (((gsm_abis_rsl || bssap || sccp) && !(gsm_abis_rsl.msg_type == 0x12)) && !(gsm_abis_rsl.msg_type == 0x28)) && !(gsm_abis_rsl.msg_type == 0x19)
+recent.display_filter: gsmtap
+recent.display_filter: eth[90] != 0 && eth[90]!=1
+recent.display_filter: http
+recent.display_filter: sctp
+recent.display_filter: s1ap
+recent.display_filter: oran_fh_cus.data_direction == 0
+recent.display_filter: frame.len > 196
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 0
+gui.geometry_main_width: 931
+gui.geometry_main_height: 635
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: true
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb000300000000000000000000000003a20000027a0000000000000000fffffffefffffffe000000000200000007800000000000000000000003a20000027a
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_DETAILS
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: true
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: STRING
+
+# Geometry and maximized state of PacketCommentDialog window.
+# Decimal integers.
+gui.geom.PacketCommentDialog.x: 750
+gui.geom.PacketCommentDialog.y: 410
+gui.geom.PacketCommentDialog.width: 931
+gui.geom.PacketCommentDialog.height: 1106
+# true or false (case-insensitive).
+gui.geom.PacketCommentDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketCommentDialog.qt_geometry: 01d9d0cb00030000000002ee0000019a00000690000005eb000002ee0000019a00000690000005eb00000000020000000780000002ee0000019a00000690000005eb
+
+# Geometry and maximized state of plen window.
+# Decimal integers.
+gui.geom.plen.x: 2560
+gui.geom.plen.y: 240
+gui.geom.plen.width: 800
+gui.geom.plen.height: 459
+# true or false (case-insensitive).
+gui.geom.plen.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.plen.qt_geometry: 01d9d0cb0003000000000a00000000f000000d1f000002ba00000a00000000f000000d1f000002ba0000000100000000078000000a00000000f000000d1f000002ba
+
+# Geometry and maximized state of DHCP (BOOTP) Statistics window.
+# Decimal integers.
+gui.geom.DHCP (BOOTP) Statistics.x: 657
+gui.geom.DHCP (BOOTP) Statistics.y: 331
+gui.geom.DHCP (BOOTP) Statistics.width: 587
+gui.geom.DHCP (BOOTP) Statistics.height: 459
+# true or false (case-insensitive).
+gui.geom.DHCP (BOOTP) Statistics.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.DHCP (BOOTP) Statistics.qt_geometry: 01d9d0cb00030000000002910000014b000004db00000315000002910000014b000004db0000031500000000000000000780000002910000014b000004db00000315
+
+# Geometry and maximized state of A-Interface DTAP Call Control window.
+# Decimal integers.
+gui.geom.A-Interface DTAP Call Control.x: 0
+gui.geom.A-Interface DTAP Call Control.y: 0
+gui.geom.A-Interface DTAP Call Control.width: 587
+gui.geom.A-Interface DTAP Call Control.height: 459
+# true or false (case-insensitive).
+gui.geom.A-Interface DTAP Call Control.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.A-Interface DTAP Call Control.qt_geometry: 01d9d0cb0003000000000000000000000000024a000001ca00000000000000000000024a000001ca00000000000000000a0000000000000000000000024a000001ca
+
+# Geometry and maximized state of TrafficTableDialog window.
+# Decimal integers.
+gui.geom.TrafficTableDialog.x: 0
+gui.geom.TrafficTableDialog.y: 0
+gui.geom.TrafficTableDialog.width: 960
+gui.geom.TrafficTableDialog.height: 576
+# true or false (case-insensitive).
+gui.geom.TrafficTableDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.TrafficTableDialog.qt_geometry: 01d9d0cb000300000000000000000000000003bf0000023f0000000000000000000003bf0000023f000000000000000007800000000000000000000003bf0000023f
+
+# Geometry and maximized state of CredentialsDialog window.
+# Decimal integers.
+gui.geom.CredentialsDialog.x: 2560
+gui.geom.CredentialsDialog.y: 240
+gui.geom.CredentialsDialog.width: 634
+gui.geom.CredentialsDialog.height: 454
+# true or false (case-insensitive).
+gui.geom.CredentialsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.CredentialsDialog.qt_geometry: 01d9d0cb0003000000000a00000000f000000c79000002b500000a00000000f000000c79000002b50000000000000000078000000a00000000f000000c79000002b5
+
+# Geometry and maximized state of SequenceDialog window.
+# Decimal integers.
+gui.geom.SequenceDialog.x: 0
+gui.geom.SequenceDialog.y: 0
+gui.geom.SequenceDialog.width: 1573
+gui.geom.SequenceDialog.height: 840
+# true or false (case-insensitive).
+gui.geom.SequenceDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.SequenceDialog.qt_geometry: 01d9d0cb00030000000000000000000000000624000003470000000000000000000006240000034700000001000000000a0000000000000000000000062400000347
+
+# Geometry and maximized state of ManufDialog window.
+# Decimal integers.
+gui.geom.ManufDialog.x: 2560
+gui.geom.ManufDialog.y: 240
+gui.geom.ManufDialog.width: 503
+gui.geom.ManufDialog.height: 394
+# true or false (case-insensitive).
+gui.geom.ManufDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ManufDialog.qt_geometry: 01d9d0cb0003000000000a00000000f000000bf60000027900000a00000000f000000bf6000002790000000000000000078000000a00000000f000000bf600000279
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 2560
+gui.geom.FollowStreamDialog.y: 240
+gui.geom.FollowStreamDialog.width: 1280
+gui.geom.FollowStreamDialog.height: 1171
+# true or false (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.FollowStreamDialog.qt_geometry: 01d9d0cb0003000000000a00000000f000000eff0000058200000a00000000f000000eff000005820000000100000000078000000a00000000f000000eff00000582
+
+# Geometry and maximized state of IOGraphDialog window.
+# Decimal integers.
+gui.geom.IOGraphDialog.x: 525
+gui.geom.IOGraphDialog.y: 240
+gui.geom.IOGraphDialog.width: 1172
+gui.geom.IOGraphDialog.height: 871
+# true or false (case-insensitive).
+gui.geom.IOGraphDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.IOGraphDialog.qt_geometry: 01d9d0cb000300000000020d000000f0000006a0000004560000020d000000f0000006a000000456000000000000000007800000020d000000f0000006a000000456
+
+# Geometry and maximized state of CaptureFilePropertiesDialog window.
+# Decimal integers.
+gui.geom.CaptureFilePropertiesDialog.x: 950
+gui.geom.CaptureFilePropertiesDialog.y: 296
+gui.geom.CaptureFilePropertiesDialog.width: 640
+gui.geom.CaptureFilePropertiesDialog.height: 768
+# true or false (case-insensitive).
+gui.geom.CaptureFilePropertiesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.CaptureFilePropertiesDialog.qt_geometry: 01d9d0cb00030000000003b6000001280000063500000427000003b600000128000006350000042700000000000000000a00000003b6000001280000063500000427
+
+# Geometry and maximized state of VoipCallsDialog window.
+# Decimal integers.
+gui.geom.VoipCallsDialog.x: 0
+gui.geom.VoipCallsDialog.y: 0
+gui.geom.VoipCallsDialog.width: 987
+gui.geom.VoipCallsDialog.height: 781
+# true or false (case-insensitive).
+gui.geom.VoipCallsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.VoipCallsDialog.qt_geometry: 01d9d0cb000300000000000000000000000003da0000030c0000000000000000000003da0000030c00000001000000000a000000000000000000000003da0000030c
+
+# Geometry and maximized state of RtpPlayerDialog window.
+# Decimal integers.
+gui.geom.RtpPlayerDialog.x: 0
+gui.geom.RtpPlayerDialog.y: 0
+gui.geom.RtpPlayerDialog.width: 1234
+gui.geom.RtpPlayerDialog.height: 1172
+# true or false (case-insensitive).
+gui.geom.RtpPlayerDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.RtpPlayerDialog.qt_geometry: 01d9d0cb000300000000000000000000000004d1000004930000000000000000000004d10000049300000001000000000a000000000000000000000004d100000493
+
+# Geometry and maximized state of DecodeAsDialog window.
+# Decimal integers.
+gui.geom.DecodeAsDialog.x: 0
+gui.geom.DecodeAsDialog.y: 0
+gui.geom.DecodeAsDialog.width: 839
+gui.geom.DecodeAsDialog.height: 1106
+# true or false (case-insensitive).
+gui.geom.DecodeAsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.DecodeAsDialog.qt_geometry: 01d9d0cb0003000000000000000000000000034600000451000000000000000000000346000004510000000002000000078000000000000000000000034600000451
+
+# Geometry and maximized state of A-Interface DTAP Supplementary Services window.
+# Decimal integers.
+gui.geom.A-Interface DTAP Supplementary Services.x: 657
+gui.geom.A-Interface DTAP Supplementary Services.y: 331
+gui.geom.A-Interface DTAP Supplementary Services.width: 587
+gui.geom.A-Interface DTAP Supplementary Services.height: 459
+# true or false (case-insensitive).
+gui.geom.A-Interface DTAP Supplementary Services.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.A-Interface DTAP Supplementary Services.qt_geometry: 01d9d0cb00030000000002910000014b000004db00000315000002910000014b000004db0000031500000000000000000780000002910000014b000004db00000315
+
+# Geometry and maximized state of ProtocolHierarchyDialog window.
+# Decimal integers.
+gui.geom.ProtocolHierarchyDialog.x: 0
+gui.geom.ProtocolHierarchyDialog.y: 0
+gui.geom.ProtocolHierarchyDialog.width: 768
+gui.geom.ProtocolHierarchyDialog.height: 614
+# true or false (case-insensitive).
+gui.geom.ProtocolHierarchyDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ProtocolHierarchyDialog.qt_geometry: 01d9d0cb000300000000000000000000000002ff000002650000000000000000000002ff00000265000000000000000007800000000000000000000002ff00000265
+
+# Geometry and maximized state of ExpertInfoDialog window.
+# Decimal integers.
+gui.geom.ExpertInfoDialog.x: 0
+gui.geom.ExpertInfoDialog.y: 0
+gui.geom.ExpertInfoDialog.width: 931
+gui.geom.ExpertInfoDialog.height: 1106
+# true or false (case-insensitive).
+gui.geom.ExpertInfoDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ExpertInfoDialog.qt_geometry: 01d9d0cb000300000000000000000000000003a2000004510000000000000000000003a200000451000000000200000007800000000000000000000003a200000451
+
+# Geometry and maximized state of ManageInterfacesDialog window.
+# Decimal integers.
+gui.geom.ManageInterfacesDialog.x: 0
+gui.geom.ManageInterfacesDialog.y: 0
+gui.geom.ManageInterfacesDialog.width: 750
+gui.geom.ManageInterfacesDialog.height: 425
+# true or false (case-insensitive).
+gui.geom.ManageInterfacesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ManageInterfacesDialog.qt_geometry: 01d9d0cb000300000000000000000000000002ed000001a80000000000000000000002ed000001a8000000000000000007800000000000000000000002ed000001a8
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 1920
+gui.geom.PacketDialog.y: 0
+gui.geom.PacketDialog.width: 1040
+gui.geom.PacketDialog.height: 1348
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb00030000000007800000000000000b8f00000543000007800000000000000b8f0000054300000001020000000a00000007800000000000000b8f00000543
+
+# Geometry and maximized state of A-Interface BSSMAP window.
+# Decimal integers.
+gui.geom.A-Interface BSSMAP.x: 657
+gui.geom.A-Interface BSSMAP.y: 331
+gui.geom.A-Interface BSSMAP.width: 587
+gui.geom.A-Interface BSSMAP.height: 459
+# true or false (case-insensitive).
+gui.geom.A-Interface BSSMAP.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.A-Interface BSSMAP.qt_geometry: 01d9d0cb00030000000002910000014b000004db00000315000002910000014b000004db0000031500000000000000000780000002910000014b000004db00000315
+
+# Geometry and maximized state of ip_hosts window.
+# Decimal integers.
+gui.geom.ip_hosts.x: 870
+gui.geom.ip_hosts.y: 451
+gui.geom.ip_hosts.width: 800
+gui.geom.ip_hosts.height: 459
+# true or false (case-insensitive).
+gui.geom.ip_hosts.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ip_hosts.qt_geometry: 01d9d0cb0003000000000366000001c3000006850000038d00000366000001c3000006850000038d00000000000000000a0000000366000001c3000006850000038d
+
+# Geometry and maximized state of WlanStatisticsDialog window.
+# Decimal integers.
+gui.geom.WlanStatisticsDialog.x: 0
+gui.geom.WlanStatisticsDialog.y: 0
+gui.geom.WlanStatisticsDialog.width: 1484
+gui.geom.WlanStatisticsDialog.height: 801
+# true or false (case-insensitive).
+gui.geom.WlanStatisticsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.WlanStatisticsDialog.qt_geometry: 01d9d0cb000300000000000000000000000005cb000003200000000000000000000005cb00000320000000000000000007800000000000000000000005cb00000320
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: -320
+gui.geom.PreferencesDialog.y: -1440
+gui.geom.PreferencesDialog.width: 1251
+gui.geom.PreferencesDialog.height: 667
+# true or false (case-insensitive).
+gui.geom.PreferencesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000fffffec0fffffa60000003a2fffffcfafffffec0fffffa60000003a2fffffcfa00000001020000000a00fffffec0fffffa60000003a2fffffcfa
+
+# Geometry and maximized state of ShowPacketBytesDialog window.
+# Decimal integers.
+gui.geom.ShowPacketBytesDialog.x: 0
+gui.geom.ShowPacketBytesDialog.y: 0
+gui.geom.ShowPacketBytesDialog.width: 954
+gui.geom.ShowPacketBytesDialog.height: 547
+# true or false (case-insensitive).
+gui.geom.ShowPacketBytesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ShowPacketBytesDialog.qt_geometry: 01d9d0cb000300000000000000000000000003b9000002220000000000000000000003b900000222000000000200000007800000000000000000000003b900000222
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
