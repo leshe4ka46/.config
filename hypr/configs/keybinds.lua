@@ -28,13 +28,13 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("steam"))
 hl.bind(
 	mainMod .. " + A",
 	hl.dsp.exec_cmd(
-		'~/wireshark-ecpri-gsm/build/run/wireshark -f "not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)" -i any'
+		'~/wireshark-ecpri-gsm/build/run/wireshark -f "not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802 or udp port 49156)" -i any'
 	)
 )
 hl.bind(
 	mainMod .. " + SHIFT + A",
 	hl.dsp.exec_cmd(
-		'~/wireshark-ecpri-gsm/build/run/wireshark -f "not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802)" -i any -k'
+		'~/wireshark-ecpri-gsm/build/run/wireshark -f "not (udp port 5702 or udp port 5802 or udp port 6702 or udp port 6802 or udp port 49156)" -i any -k'
 	)
 )
 
